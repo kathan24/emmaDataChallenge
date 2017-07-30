@@ -16,7 +16,7 @@ last_login, registration and age). Other fields are part of data field (json blo
 but searching might be slow depending how you are indexing this column. 
 
 
-How would a hybrid system (PostgreSQL + <something else>) help you optimize for the
+How would a hybrid system (PostgreSQL + 'something') help you optimize for the
 optimal situation like ad-hoc searching, fast importing of large amounts of data, fast exporting and quick responses
 for gathering large amounts of data.
 - A hybrid system of PostgreSQL and Elasticsearch will be very helpful in the above mentioned scenario. If one wants to
