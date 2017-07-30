@@ -1,0 +1,2 @@
+LOCK TABLE relationship IN EXCLUSIVE MODE;
+COPY relationship FROM '{0}' WITH (FORMAT 'csv', DELIMITER E'\t');

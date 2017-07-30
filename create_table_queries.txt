@@ -1,0 +1,17 @@
+CREATE TABLE "user_profile" (
+    "user_id" SERIAL PRIMARY KEY,
+    "public" BOOLEAN,
+    "completion_percentage" INTEGER,
+    "gender" BOOLEAN,
+    "region" TEXT,
+    "last_login" DATE,
+    "registration" DATE,
+    "age" INTEGER,
+    "data" JSONB
+    );
+
+
+CREATE TABLE "relationship" (
+    "user1_id" INTEGER NOT NULL,
+    "user2_id" INTEGER NOT NULL
+  );

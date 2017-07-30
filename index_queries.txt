@@ -1,0 +1,11 @@
+CREATE INDEX
+    "idx_relationship__user1"
+    ON "relationship" ("user1_id");
+
+ALTER TABLE "relationship"
+    ADD CONSTRAINT "fk_relationship__user1"
+    FOREIGN KEY ("user1_id") REFERENCES "user_profile" ("user_id");
+
+ALTER TABLE "relationship"
+    ADD CONSTRAINT "fk_relationship__user2"
+    FOREIGN KEY ("user2_id") REFERENCES "user_profile" ("user_id");
